@@ -6,16 +6,21 @@
 
 <div class="row">
     <div class="col-md-12">
-        <table class="table table-bordered">
+        <table class="table table-bordered table-hover table-striped">
             <thead>
                 <tr>
-                    <th>Id</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Age</th>
+                    <th>Edit/Delete</th>
                 </tr>
             </thead>
             <tbody>
+                <tr>
+                    <td id="spinner-row" colspan="4" style="text-align: center;">
+                        <img style="width: 150px;" src="https://i.gifer.com/VAyR.gif" />
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -44,6 +49,7 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancel</button>
                     <button class="btn btn-primary" id="save-person">Save</button>
+                    <button class="btn btn-outline-dark" id="update-person">Update</button>
                 </div>
             </div>
         </div><!-- /.modal-content -->
